@@ -40,8 +40,8 @@ Oficina de 40 m2, con 7 estaciones, mesa para reuniones y acceso directo al pati
             <Text text='  Cajonera con llave / Acceso directo a patio' />
           </div>
         </div>
-        <img src='/zanelli1.jpg' />
         <BigTitle title='HABITANTES EN ZANELLI' small />
+        <img src='zanelli1.png' style={{display: 'block', margin: '0 auto'}} />
       </div>
     )
   }
