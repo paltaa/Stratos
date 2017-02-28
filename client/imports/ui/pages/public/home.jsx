@@ -59,7 +59,7 @@ export default class Home extends React.Component {
         </div>
         <BigPhoto title='LEÑERIA SEMINARIO' subtitle='Seminario 1307 Ñuñoa' photo='/leneria1.jpg' onTouchTap={this.redirectSeminario1307} />
         <BigPhoto title='LEÑERIA ZANELLI' subtitle='Zanelli 1319 Ñuñoa' photo='/leneria2.jpg' onTouchTap={this.redirectZanelli1319} />
-
+        <BigPhoto title='EX LEÑERIA' subtitle='Proximamente' photo='/leneria3.jpg' onTouchTap='' />
       </div>
     )
   }
