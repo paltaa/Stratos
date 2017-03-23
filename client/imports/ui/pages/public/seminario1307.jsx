@@ -3,6 +3,8 @@ import BigTitle from '../../components/big-title'
 import Text from '../../components/text'
 import autobind from 'autobind-decorator'
 import YellowButton from '../../components/yellowbutton'
+import Logos from '../../components/logos'
+
 
 export default class Seminario1307 extends React.Component {
   render () {
@@ -31,6 +33,9 @@ export default class Seminario1307 extends React.Component {
         <Text text='Estacionamiento de Bicicletas' />
         <Text text='Pet friendly' />
         <BigTitle title='HABITANTES EN SEMINARIO' small />
+        <div className='row'>
+          <Logos logo='/LOGO-PLAN-COMUN-BLANCO.png' text='Plan Común' web='www.plancomun.com' onTouchTap={()=>window.location.href='http://www.plancomun.cl'}/>
+        </div>
         <img src='seminario1.jpg' style={{display: 'block', margin: '0 auto'}} />
       </div>
     )
