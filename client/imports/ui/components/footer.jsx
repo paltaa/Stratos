@@ -14,8 +14,16 @@ export default class Footer extends React.Component {
             fontSize: 12,
             color: 'white'
           }}
-        >
-          COPYRIGHT © LEÑERIA - COMUNIDAD - ESPACIOS - COWORK   - Por: JPQuirox
+          >
+CENTRO LEÑERIA
+
+D1: SEMINARIO 1307 | ÑUÑOA
+D2: RENATO ZANELLI 1321 | PROVIDENCIA
+M : INFO@CENTROLENERIA.CL
+F:  +56 9 6613 4412 - Jorge Castillo
+F : +56 9 9732 8319 - Francisco Salvatierra
+F : +56 9 9499 9750 - José Quiroga
+W : WWW.CENTROLENERIA.CL
         </div>
       </div>
     )
