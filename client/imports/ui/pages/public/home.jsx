@@ -25,6 +25,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <BigTitle title='KILL THE BOSS' />
+
         <Text text='
           Leñeria es un espacio de trabajo que potencia la ejecución de ideas y la diversión. Somos una comunidad hambrienta por crear, explorar, colaborar y crecer. Leñeria no es otro cowork, lugar de eventos o makerspace. Desde nuestro inicio en 2012 no hemos parado de evolucionar, cambiar, mover y rehacer. Ese es el espíritu que nos define y que refleja a nuestra comunidad.'
           style={{margin: '80px auto'}}
