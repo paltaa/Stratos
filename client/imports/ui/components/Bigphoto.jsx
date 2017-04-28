@@ -16,6 +16,11 @@ export default class BigPhoto extends React.Component {
       hover: false
     }
   }
+
+  isIphonePenca () {
+    return window.innerWidth < 400
+  }
+
   render () {
     return (
       <div
@@ -49,7 +54,7 @@ export default class BigPhoto extends React.Component {
         <div style={{fontSize: 42, marginTop: 140, width: '100%', position: 'absolute', letterSpacing: 12, fontWeight: 600}}>
           {this.props.title}
         </div>
-        <div style={{fontSize: 26, marginTop: 200, width: '100%', position: 'absolute'}}>
+        <div style={{fontSize: 26, marginTop: this.isIphonePenca() ? 250 : 200, width: '100%', position: 'absolute'}}>
           {this.props.subtitle}
         </div>
       </div>
