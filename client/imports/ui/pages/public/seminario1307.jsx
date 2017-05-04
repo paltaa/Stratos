@@ -4,6 +4,7 @@ import Text from '../../components/text'
 import autobind from 'autobind-decorator'
 import YellowButton from '../../components/yellowbutton'
 import Logos from '../../components/logos'
+import Mapa from '../../components/mapa'
 
 
 export default class Seminario1307 extends React.Component {
@@ -36,7 +37,9 @@ export default class Seminario1307 extends React.Component {
         <div className='row'>
           <Logos logo='/LOGO-PLAN-COMUN-BLANCO.png' text='Plan Común' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
         </div>
-        <img src='seminario1.jpg' style={{display: 'block', margin: '0 auto'}} />
+        <img src='seminario1.jpg' style={{display: 'block', margin: '0 auto', maxWidth: '100%'}} />
+        <Mapa lat={-33.4572406} lng={-70.6281164} />
+
       </div>
     )
   }

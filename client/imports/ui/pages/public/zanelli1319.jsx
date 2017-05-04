@@ -2,9 +2,7 @@ import React from 'react'
 import BigTitle from '../../components/big-title'
 import Text from '../../components/text'
 import YellowButton from '../../components/yellowbutton'
-//import SimpleMap from '../components/googlemaps'
-import { AutoRotatingCarousel, Slide } from 'material-auto-rotating-carousel'
-import { green400, green600, blue400, blue600, red400, red600 } from 'material-ui/styles/colors'
+import Mapa from '../../components/mapa'
 
 export default class Zanelli1319 extends React.Component {
   render () {
@@ -44,8 +42,8 @@ Oficina de 40 m2, con 7 estaciones, mesa para reuniones y acceso directo al pati
           </div>
         </div>
         <BigTitle title='HABITANTES EN ZANELLI' small />
-        <img src='zanelli1.png' style={{display: 'block', margin: '0 auto'}} />
-
+        <img src='zanelli1.png' style={{display: 'block', margin: '0 auto', maxWidth: '100%'}} />
+        <Mapa lat={-33.4424679} lng={-70.5939897} />
       </div>
 
     )

@@ -9,7 +9,7 @@ Meteor.methods({
     Meteor.defer(function () {
       try {
         Email.send({
-          to: 'francisco@ab-aa.com',
+          to: 'info@centroleneria.cl',
           cc: '',
           from: process.env.MAIL_FROM,
           subject: `Formulario de contacto: ${data.subject}`,
