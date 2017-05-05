@@ -24,8 +24,6 @@ export default class Home extends React.Component {
   render () {
     return (
       <div>
-        <BigTitle title='KILL THE BOSS' />
-
         <Carousel style={{position: 'relative', backgroundColor: 'black'}}>
           <div style={{width: '100%'}}>
             <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA'
@@ -37,11 +35,12 @@ export default class Home extends React.Component {
             <YellowButton text='Agenda una visita hoy' />
           </div>
         </Carousel>
+        <BigTitle title='KILL THE BOSS' />
 
         <br />
         <br />
         <br />
-        <div className='row container' style={{textAlign: 'center'}}>
+        <div className='row' style={{textAlign: 'center'}}>
           <div className='col-md-6 col-xs-12' style={{textAlign: 'center'}}>
             <img src='/fotohome1.jpg' />
             <br />
@@ -50,11 +49,11 @@ export default class Home extends React.Component {
             <Text text='Nuestros espacios te dan la libertad y privacidad para trabajar libre de distracciones. Al mismo tiempo contamos con áreas comunes donde podrás reunirte, relajarte y convivir con profesionales y creadores de diversas disciplinas.' />
 
           </div>
-          <div className='col-md-6 col-xs-12' style={{textAlign: 'center'}}>
+          <div className='col-md-6 col-xs-12 col-lg-6' style={{textAlign: 'center'}}>
             <img src='/fotohome2.jpg' />
             <br />
             <br />
-            <BigTitle title='COMUNIDAD DE TRABAJO INDEPENDIENTE' small style={{fontSize: '13.5px'}} />
+            <BigTitle title='COMUNIDAD DE TRABAJO INDEPENDIENTE' small style={{fontSize: '13.5px', textAlign: 'center'}} />
             <Text text='Leñeria es una red social física conformada por arquitectos, diseñadores, fotógrafos, ingenieros, ciclistas, audiovisuales, programadores y emprendedores que trabajan juntos en un ambiente diseñado para fomentar la interacción y el networking.' />
           </div>
         </div>
