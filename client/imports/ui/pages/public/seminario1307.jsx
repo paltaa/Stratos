@@ -1,11 +1,10 @@
 import React from 'react'
 import BigTitle from '../../components/big-title'
 import Text from '../../components/text'
-import autobind from 'autobind-decorator'
 import YellowButton from '../../components/yellowbutton'
 import Logos from '../../components/logos'
 import Mapa from '../../components/mapa'
-
+import autobind from 'autobind-decorator'
 
 export default class Seminario1307 extends React.Component {
   render () {

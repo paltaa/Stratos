@@ -1,6 +1,4 @@
 import React from 'react'
-import './google.js'
-/* global google */
 
 export default class Carousel extends React.Component {
   componentDidMount () {

@@ -26,10 +26,12 @@ export default class Home extends React.Component {
       <div>
         <BigTitle title='KILL THE BOSS' />
 
-        <Carousel style={{position: 'relative'}}>
-          <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA'
-            style={{margin: '80px auto', position: 'relative', fontWeight: 'bold', color: 'white', align: 'left'}}
-          />
+        <Carousel style={{position: 'relative', backgroundColor: 'black'}}>
+          <div style={{width: '100%'}}>
+            <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA'
+              style={{margin: '80px auto', position: 'relative', fontWeight: 'bold', color: 'white', textAlign: 'left'}}
+            />
+          </div>
           <BigTitle title='LEÑERIA COMUNIDAD DE TRABAJO INDEPENDIENTE' small />
           <div style={{textAlign: 'left'}}>
             <YellowButton text='Agenda una visita hoy' />
@@ -39,7 +41,7 @@ export default class Home extends React.Component {
         <br />
         <br />
         <br />
-        <div className='row container' style={{ align:'left'}}>
+        <div className='row container' style={{textAlign: 'center'}}>
           <div className='col-md-6 col-xs-12' style={{textAlign: 'center'}}>
             <img src='/fotohome1.jpg' />
             <br />
