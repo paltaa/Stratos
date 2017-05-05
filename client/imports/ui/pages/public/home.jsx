@@ -10,7 +10,6 @@ const contextTypes = {
   location: React.PropTypes.object,
   router: React.PropTypes.object
 }
-
 export default class Home extends React.Component {
   @autobind
   redirectSeminario1307 () {
@@ -27,20 +26,20 @@ export default class Home extends React.Component {
       <div>
         <BigTitle title='KILL THE BOSS' />
 
-        <Carousel />
+        <Carousel style={{position: 'relative'}}>
+          <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA'
+            style={{margin: '80px auto', position: 'relative', fontWeight: 'bold', color: 'white', align: 'left'}}
+          />
+          <BigTitle title='LEÑERIA COMUNIDAD DE TRABAJO INDEPENDIENTE' small />
+          <div style={{textAlign: 'left'}}>
+            <YellowButton text='Agenda una visita hoy' />
+          </div>
+        </Carousel>
 
-        <Text text='
-          Leñeria es un espacio de trabajo que potencia la ejecución de ideas y la diversión. Somos una comunidad hambrienta por crear, explorar, colaborar y crecer. Leñeria no es otro cowork, lugar de eventos o makerspace. Desde nuestro inicio en 2012 no hemos parado de evolucionar, cambiar, mover y rehacer. Ese es el espíritu que nos define y que refleja a nuestra comunidad.'
-          style={{margin: '80px auto'}}
-        />
-        <BigTitle title='¿TE INTERESA ARRENDAR UN ESPACIO DE TRABAJO EN LEÑERIA?' small />
-        <div style={{textAlign: 'center'}}>
-          <YellowButton text='Agenda una visita hoy' />
-        </div>
         <br />
         <br />
         <br />
-        <div className='row container'>
+        <div className='row container' style={{ align:'left'}}>
           <div className='col-md-6 col-xs-12' style={{textAlign: 'center'}}>
             <img src='/fotohome1.jpg' />
             <br />
