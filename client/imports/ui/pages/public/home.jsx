@@ -30,7 +30,7 @@ export default class Home extends React.Component {
               style={{margin: '80px auto', position: 'relative', fontWeight: 'bold', color: 'white', textAlign: 'left'}}
             />
           </div>
-          <BigTitle title='LEÑERIA COMUNIDAD DE TRABAJO INDEPENDIENTE' small />
+          <BigTitle title='LEÑERIA COMUNIDAD DE TRABAJO INDEPENDIENTE' style={{textAlign: 'left'}} small />
           <div style={{textAlign: 'left'}}>
             <YellowButton text='Agenda una visita hoy' />
           </div>
