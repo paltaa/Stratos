@@ -5,6 +5,8 @@ import YellowButton from '../../components/yellowbutton'
 import BigPhoto from '../../components/Bigphoto'
 import autobind from 'autobind-decorator'
 import Carousel from '../../components/slick-cool'
+import Logos from '../../components/logos'
+
 
 const contextTypes = {
   location: React.PropTypes.object,
@@ -26,11 +28,13 @@ export default class Home extends React.Component {
       <div>
         <Carousel style={{position: 'relative', backgroundColor: 'black'}}>
           <div style={{width: '100%'}}>
-            <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA'
-              style={{margin: '80px auto', position: 'relative', fontWeight: 'bold', color: 'white', textAlign: 'left'}}
-            />
+            <BigTitle title='LEÑERIA' style={{textAlign: 'left'}} small />
+            <BigTitle title='COMUNIDAD DE TRABAJO INDEPENDIENTE' style={{textAlign: 'left'}} small />
+
           </div>
-          <BigTitle title='LEÑERIA COMUNIDAD DE TRABAJO INDEPENDIENTE' style={{textAlign: 'left'}} small />
+          <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA'
+            style={{margin: '80px auto', position: 'relative', fontWeight: 'bold', color: 'white', textAlign: 'left'}} />
+
           <div style={{textAlign: 'left'}}>
             <YellowButton text='Agenda una visita hoy' />
           </div>
@@ -64,6 +68,20 @@ export default class Home extends React.Component {
         <BigPhoto title='SEMINARIO' subtitle='Seminario 1307 Ñuñoa' photo='/leneria1.jpg' onTouchTap={this.redirectSeminario1307} />
         <BigPhoto title='ZANELLI' subtitle='Zanelli 1319 Ñuñoa' photo='/leneria2.jpg' onTouchTap={this.redirectZanelli1319} />
         <BigPhoto title='EX LEÑERIA' subtitle='Proximamente' photo='/leneria3.jpg' onTouchTap='' />
+        <BigTitle title='Habitantes en Leñeria' small/>
+        <div className='row'>
+          <Logos logo='/LOGO-PLAN-COMUN-BLANCO.png' text='Plan Común' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+          <Logos logo='/Logos/Bestias.jpg' text='Bestias' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+          <Logos logo='/Logos/intrepido.png' text='Intrepido' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+          <Logos logo='/Logos/KMLNWEB.png' text='Kamaleon' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+          <Logos logo='/Logos/chol1.jpg' text='Chol1' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+          <Logos logo='/Logos/Aureo.png' text='Arquitectos Aureo' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+        </div>
+        <div className='row'>
+          <Logos logo='/Logos/mane.jpg' text='Mane' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+          <Logos logo='/Logos/mono.png' text='Mono' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+
+        </div>
       </div>
     )
   }
