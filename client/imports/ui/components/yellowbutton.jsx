@@ -30,7 +30,7 @@ export default class YellowButton extends React.Component {
           width: 'auto',
           letterSpacing: '0.8px',
           backgroundColor: this.state.hover ? '#2b2d30' : '#ff0',
-          color: this.state.hover ? '#ff0' : '#2b2d30',
+          color: this.state.hover ? '#ffff00' : '#2b2d30',
           fontFamily: 'Raleway',
           textAlign: 'center',
           display: 'inline-block',

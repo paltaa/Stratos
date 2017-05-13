@@ -22,21 +22,20 @@ export default class Home extends React.Component {
   redirectZanelli1319 () {
     this.context.router.push('/zanelli1319')
   }
-
   render () {
     return (
       <div>
-        <Carousel style={{position: 'relative', backgroundColor: 'black'}}>
-          <div style={{width: '100%'}}>
-            <BigTitle title='LEÑERIA' style={{textAlign: 'left'}} small />
-            <BigTitle title='COMUNIDAD DE TRABAJO INDEPENDIENTE' style={{textAlign: 'left'}} small />
+        <Carousel style={{position: 'relative', backgroundColor: 'black', margin: '0 auto'}}>
+          <div style={{width: '100% 100%'}}>
+            <BigTitle title='LEÑERIA' style={{textAlign: 'left', fontSize: '60', margin: '5px -350px'}} small />
+            <BigTitle title='COMUNIDAD DE TRABAJO INDEPENDIENTE' style={{textAlign: 'left', fontSize: '35', margin: '5px -350px', width: '1000px'}} small />
 
+          <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA' style={{fontSize: '30'}}
+            style={{margin: '5px -350px', position: 'relative', fontWeight: 'bold', color: 'white', textAlign: 'left'}} />
           </div>
-          <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA'
-            style={{margin: '80px auto', position: 'relative', fontWeight: 'bold', color: 'white', textAlign: 'left'}} />
 
           <div style={{textAlign: 'left'}}>
-            <YellowButton text='Agenda una visita hoy' />
+            <YellowButton text='Agenda una visita hoy' style={{margin: '5px -350px'}} />
           </div>
         </Carousel>
         <BigTitle title='KILL THE BOSS' />
