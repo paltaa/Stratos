@@ -7,7 +7,6 @@ import autobind from 'autobind-decorator'
 import Carousel from '../../components/slick-cool'
 import Logos from '../../components/logos'
 
-
 const contextTypes = {
   location: React.PropTypes.object,
   router: React.PropTypes.object
@@ -25,17 +24,12 @@ export default class Home extends React.Component {
   render () {
     return (
       <div>
-        <Carousel style={{position: 'relative', backgroundColor: 'black', margin: '0 auto'}}>
-          <div style={{width: '100% 100%'}}>
-            <BigTitle title='LEÑERIA' style={{textAlign: 'left', fontSize: '60', margin: '5px -350px'}} small />
-            <BigTitle title='COMUNIDAD DE TRABAJO INDEPENDIENTE' style={{textAlign: 'left', fontSize: '35', margin: '5px -350px', width: '1000px'}} small />
-
-          <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA' style={{fontSize: '30'}}
-            style={{margin: '5px -350px', position: 'relative', fontWeight: 'bold', color: 'white', textAlign: 'left'}} />
-          </div>
-
-          <div style={{textAlign: 'left'}}>
-            <YellowButton text='Agenda una visita hoy' style={{margin: '5px -350px'}} />
+        <Carousel style={{position: 'relative', backgroundColor: 'black'}}>
+          <div style={{width: '100%', maxWidth: '100%'}}>
+            <BigTitle title='LEÑERIA' style={{textAlign: 'left', fontSize: '60', margin: '5px 0px'}} small />
+            <Text text='COMUNIDAD DE TRABAJO INDEPENDIENTE' style={{margin: '5px 0px', position: 'relative', fontWeight: 'bold', fontSize: '35', color: 'white', textAlign: 'left', lineHeight: '35px'}} />
+            <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA' style={{margin: '5px 0px', position: 'relative', fontWeight: 'bold', fontSize: '22', color: 'white', textAlign: 'left'}} />
+            <YellowButton text='Agenda una visita hoy' style={{margin: '5px 0px'}} />
           </div>
         </Carousel>
         <BigTitle title='KILL THE BOSS' />
@@ -67,7 +61,7 @@ export default class Home extends React.Component {
         <BigPhoto title='SEMINARIO' subtitle='Seminario 1307 Ñuñoa' photo='/leneria1.jpg' onTouchTap={this.redirectSeminario1307} />
         <BigPhoto title='ZANELLI' subtitle='Zanelli 1319 Ñuñoa' photo='/leneria2.jpg' onTouchTap={this.redirectZanelli1319} />
         <BigPhoto title='EX LEÑERIA' subtitle='Proximamente' photo='/leneria3.jpg' onTouchTap='' />
-        <BigTitle title='Habitantes en Leñeria' small/>
+      {/*  <BigTitle title='Habitantes en Leñeria' small/>
         <div className='row'>
           <Logos logo='/LOGO-PLAN-COMUN-BLANCO.png' text='Plan Común' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
           <Logos logo='/Logos/Bestias.jpg' text='Bestias' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
@@ -80,7 +74,7 @@ export default class Home extends React.Component {
           <Logos logo='/Logos/mane.jpg' text='Mane' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
           <Logos logo='/Logos/mono.png' text='Mono' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
 
-        </div>
+        </div>*/}
       </div>
     )
   }

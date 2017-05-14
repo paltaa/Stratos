@@ -53,8 +53,8 @@ export default class Carousel extends React.Component {
           <div style={{backgroundImage: 'url(/02.jpg)', backgroundSize: 'cover', backgrondPosition: 'center', height: '100vh', backgroundRepeat: 'no-repeat', opacity: '0.8'}}>&nbsp;</div>
           <div style={{backgroundImage: 'url(/03.jpg)', backgroundSize: 'cover', backgrondPosition: 'center', height: '100vh', backgroundRepeat: 'no-repeat', opacity: '0.8'}}>&nbsp;</div>
         </Slider>
-        <div style={{color: 'white', position: 'absolute', top: 0, height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '99%', margin: '0 auto'}}>
-          <div style={{maxWidth: '50%'}}>
+        <div style={{color: 'white', position: 'absolute', top: 0, height: '100vh', display: 'left', alignItems: 'center', justifyContent: 'center', width: '99%', margin: '100px 10%'}}>
+          <div style={{maxWidth: '80%'}}>
             {this.props.children || '' }
           </div>
         </div>

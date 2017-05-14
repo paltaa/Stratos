@@ -21,7 +21,7 @@ export default class HeaderMenu extends React.Component {
 
   render () {
     return (
-      <div style={{marginTop: 5}}>
+      <div style={{marginTop: 5,}}>
         <IconMenu
           iconButtonElement={
             <FlatButton label='Sedes' labelStyle={{color: 'white'}} />
