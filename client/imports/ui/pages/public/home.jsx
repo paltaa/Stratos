@@ -25,7 +25,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <Carousel style={{position: 'relative', backgroundColor: 'black'}}>
-          <div style={{width: '100%', maxWidth: '100%'}}>
+          <div style={{width: '30% 100%', maxWidth: '100%'}}>
             <BigTitle title='LEÑERIA' style={{textAlign: 'left', fontSize: '60', margin: '5px 0px'}} small />
             <Text text='COMUNIDAD DE TRABAJO INDEPENDIENTE' style={{margin: '5px 0px', position: 'relative', fontWeight: 'bold', fontSize: '35', color: 'white', textAlign: 'left', lineHeight: '35px'}} />
             <Text text='ESPACIOS PRIVADOS COWORK EN ÑUÑOA Y PROVIDENCIA' style={{margin: '5px 0px', position: 'relative', fontWeight: 'bold', fontSize: '22', color: 'white', textAlign: 'left'}} />
