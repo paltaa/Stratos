@@ -5,7 +5,7 @@ import YellowButton from '../../components/yellowbutton'
 import BigPhoto from '../../components/Bigphoto'
 import autobind from 'autobind-decorator'
 import Carousel from '../../components/slick-cool'
-import Logos from '../../components/logos'
+{/*  import Logos from '../../components/logos'  */ }
 
 const contextTypes = {
   location: React.PropTypes.object,
@@ -23,7 +23,9 @@ export default class Home extends React.Component {
   }
   render () {
     return (
-      <div>
+      <div style={{webKitTextSizedAjust: 'none',
+        webkitmarginbefore: '0em',
+        webkitmarginafter: '0em'}}>
         <Carousel style={{position: 'relative', backgroundColor: 'black'}}>
           <div style={{width: '30% 100%', maxWidth: '100%'}}>
             <BigTitle title='LEÑERIA' style={{textAlign: 'left', fontSize: '60', margin: '5px 0px'}} small />
@@ -33,7 +35,6 @@ export default class Home extends React.Component {
           </div>
         </Carousel>
         <BigTitle title='KILL THE BOSS' />
-
         <br />
         <br />
         <br />
