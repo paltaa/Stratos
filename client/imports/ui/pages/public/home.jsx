@@ -69,7 +69,7 @@ export default class Home extends React.Component {
           <Logos logo='/Logos/intrepido.png' text='Intrepido' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
           <Logos logo='/Logos/KMLNWEB.png' text='Kamaleon' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
           <Logos logo='/Logos/chol1.jpg' text='Chol1' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
-          <Logos logo='/Logos/Aureo.png' text='Arquitectos Aureo' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
+          <Logos logo='/Lozgos/Aureo.png' text='Arquitectos Aureo' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
         </div>
         <div className='row'>
           <Logos logo='/Logos/mane.jpg' text='Mane' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />
