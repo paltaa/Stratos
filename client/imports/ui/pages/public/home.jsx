@@ -44,8 +44,6 @@ export default class Home extends React.Component {
         <br />
         <Text text="Ofrecemos un servicio personalizado, y flexible, que aporta soluciones a medida de cada requerimiento. Miramos el mercado de forma completa, realizando profundos estudios en cada búsqueda. No nos ponemos límites territoriales."/>
         <br />
-        <BigTitle title='Contacto' />
-
         <BigTitle title='Nosotros' />
         <Text text="STRATOS EXECUTIVE SEARCH, es una consultora boutique conformada por consultores con años de experiencia en búsqueda de altos ejecutivos y cargos complejos, asesoría en gobiernos corporativos y desarrollo de liderazgo de equipos directivos. Trabajamos en búsquedas internacionales para empresas globales y de Latinoamérica. Ofrecemos un servicio personalizado con consultores senior, con herramientas de última generación para entregar un servicio de excelencia." />
         <br />

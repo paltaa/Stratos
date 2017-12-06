@@ -1,5 +1,5 @@
-# Federeichon's project Web administrator
-This is the Administrator panel of the Federeichon App. It's made with Meteor for server side and React for the Front-End.
+# Stratos
+This is the Administrator panel of the Stratos App. It's made with Meteor for server side and React for the Front-End.
 
 ### To start coding:
 - Download and install [Meteor](https://www.meteor.com/install) on your Computer.
