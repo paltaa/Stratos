@@ -9,7 +9,7 @@ const propTypes = {
 export default class Text extends React.Component {
   render () {
     return (
-      <span style={_.extend({lineHeight: '28px', fontWeight: 400, fontFamily: 'Raleway', textAlign: 'center', display: 'block', fontSize: 15, margin: '0 auto', color: 'rgb(59, 59, 59)'}, this.props.style)}>
+      <span style={_.extend({lineHeight: '38px', fontWeight: 400, marginLeft: '20px',fontFamily: 'Raleway', textAlign: 'left', display: 'block', fontSize: 20, margin: '10 10', color: 'rgb(59, 59, 59)'}, this.props.style)}>
         {this.props.text}
       </span>
     )

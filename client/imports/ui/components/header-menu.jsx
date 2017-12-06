@@ -12,28 +12,53 @@ export default class HeaderMenu extends React.Component {
   redirectContact () {
     this.context.router.push('/contacto')
   }
-  redirectSeminario1307 () {
-    this.context.router.push('/seminario1307')
+  redirectEmpresa() {
+    this.context.router.push('/empresa')
   }
-  redirectZanelli1319 () {
-    this.context.router.push('/zanelli1319')
+  redirectEquipo () {
+    this.context.router.push('/equipo')
   }
+  redirectContacto2 () {
+    this.context.router.push('/contacto2')
+  }
+  redirectServicios () {
+    this.context.router.push('/servicios')
+  }
+  redirectTienda () {
+    this.context.router.push('/tienda')
+  }
+  redirectBlog () {
+    this.context.router.push('/blog')
+  }
+
 
   render () {
     return (
       <div style={{marginTop: 5,}}>
         <IconMenu
           iconButtonElement={
-            <FlatButton label='Sedes' labelStyle={{color: 'white'}} />
+            <FlatButton label='Nosotros' labelStyle={{color: 'white'}} />
+          }
+          targetOrigin={{horizontal: 'right', vertical: 'top'}}
+          anchorOrigin={{horizontal: 'right', vertical: 'top'}}
+              >
+          <MenuItem primaryText='Empresa' onTouchTap={this.redirectEmpresa.bind(this)} />
+          <MenuItem primaryText='Equipo' onTouchTap={this.redirectEquipo.bind(this)} />
+        </IconMenu>
+        <FlatButton label='Servicios' labelStyle={{color: 'white'}} onTouchTap={this.redirectServicios.bind(this)} />
+        <IconMenu
+          iconButtonElement={
+            <FlatButton label='Contacto' labelStyle={{color: 'white'}} />
           }
           targetOrigin={{horizontal: 'right', vertical: 'top'}}
           anchorOrigin={{horizontal: 'right', vertical: 'top'}}
         >
-          <MenuItem primaryText='Seminario 1307' onTouchTap={this.redirectSeminario1307.bind(this)} />
-          <MenuItem primaryText='Zanelli 1319' onTouchTap={this.redirectZanelli1319.bind(this)} />
-          <MenuItem primaryText='Ex-Leñeria' />
-        </IconMenu>
-        <FlatButton label='Contacto' labelStyle={{color: 'white'}} onTouchTap={this.redirectContact.bind(this)} />
+          <MenuItem primaryText='Clientes' onTouchTap={this.redirectContact.bind(this)} />
+          <MenuItem primaryText='Candidatos' onTouchTap={this.redirectContacto2.bind(this)} />
+        </IconMenu> 
+                <FlatButton label='Tienda' labelStyle={{color: 'white'}} onTouchTap={this.redirectTienda.bind(this)} />
+               <FlatButton label='Blog' labelStyle={{color: 'white'}} onTouchTap={this.redirectBlog.bind(this)} />
+
       </div>
     )
   }
