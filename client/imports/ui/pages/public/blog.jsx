@@ -28,55 +28,62 @@ export default class Home extends React.Component {
       <div style={{webKitTextSizedAjust: 'none',
         webkitmarginbefore: '0em',
         webkitmarginafter: '0em'}}>
-        <Carousel style={{position: 'relative', backgroundColor: 'black'}}>
-          <div style={{width: '30% 100%', maxWidth: '100%'}}>
-            <BigTitle title='STRATOS' style={{textAlign: 'left', fontSize: '60', margin: '5px 0px'}} small />
-            <Text text='EXECUTIVE SEARCH & LEADERSHIP CONSULTANTS' style={{margin: '5px 0px', position: 'relative', fontWeight: 'bold', fontSize: '35', color: 'white', textAlign: 'left', lineHeight: '35px'}} />
-            <Text text='10 AÑOS EN CHILE' style={{margin: '5px 0px', position: 'relative', fontWeight: 'bold', fontSize: '22', color: 'white', textAlign: 'left'}} />
-            <YellowButton text='Contacto clientes' style={{margin: '5px 0px'}} />
-          </div>
-        </Carousel>
-        <BigTitle title='Quienes somos' />
+        <BigPhoto title='STRATOS' subtitle='EXECUTIVE SEARCH & LEADERSHIP CONSULTANTS' photo='/blog.jpg' onTouchTap={this.redirectSeminario1307} />
+
+        <BigTitle title='Nuestro Blog' />
+        <Text text="Ejemplo....  Finalmente, los procesos de avisos en las redes sociales no permiten contar con los mejores candidatos que existen en el mercado, que son aquellos que tienen el perfil y que no están en un proceso de búsqueda activa de empleo. Es en estos candidatos en donde probablemente se encuentre el mejor talento." />
+        <br />
+        <Text text="Quienes nos dedicamos a la búsqueda de ejecutivos sabemos que los buenos ejecutivos rara vez están dedicados a vitrinear y que están plenamente concentrados y dedicados a su trabajo. Es por eso que levantar buenos ejecutivos es una tarea muy difícil, ya que tienes que seducir y convencer a alguien que están contento en donde está y en lo que hace, para que esté dispuesto de asumir un nuevo desafío." />
+        <br />
+        <br />
         
-        <Text text="STRATOS EXECUTIVE SEARCH es una Consultora con gran experiencia en búsquedas de altos ejecutivos, consultoría en gobiernos corporativos, y desarrollo del liderazgo de equipos directivos. Somos una empresa Global. Trabajamos en la búsqueda internacional para empresas chilenas así como en la búsqueda en Latinoamérica para empresas Europeas, Americanas y Asiáticas." />
-        <br />
-        <Text text="Nuestro compromiso es encontrar en el mercado al mejor ejecutivo para la posición que se requiere, de manera que nuestros clientes cuenten con todas las opciones al momento de decidir una contratación. Contamos con una moderna y sofisticada tecnología para los procesos de búsqueda y de evaluación de ejecutivos, desarrollados por nuestros partners internacionales en Europa y EEUU."/>
-        <br />
-        <Text text="Ofrecemos un servicio personalizado, y flexible, que aporta soluciones a medida de cada requerimiento. Miramos el mercado de forma completa, realizando profundos estudios en cada búsqueda. No nos ponemos límites territoriales."/>
-        <br />
-        <BigTitle title='Contacto' />
-
-        <BigTitle title='Nosotros' />
-        <Text text="STRATOS EXECUTIVE SEARCH, es una consultora boutique conformada por consultores con años de experiencia en búsqueda de altos ejecutivos y cargos complejos, asesoría en gobiernos corporativos y desarrollo de liderazgo de equipos directivos. Trabajamos en búsquedas internacionales para empresas globales y de Latinoamérica. Ofrecemos un servicio personalizado con consultores senior, con herramientas de última generación para entregar un servicio de excelencia." />
+        <BigTitle title='Ultimas Entradas' />
         <br />
         <br />
-
-        <Mapa lat={-33.4027918} lng={-70.5893016} />
 
         <div className='row' style={{textAlign: 'center'}}>
           <div className='col-md-6 col-xs-12' style={{textAlign: 'center'}}>
-            <img src='/fotohome1.jpg' />
+            <img src='/guerradeltalento.jpg' />
             <br />
             <br />
-            <BigTitle title='ESPACIOS DE TRABAJO PRIVADOS & AREAS COMUNES' small style={{fontSize: '13.5px'}} />
-            <Text text='Nuestros espacios te dan la libertad y privacidad para trabajar libre de distracciones. Al mismo tiempo contamos con áreas comunes donde podrás reunirte, relajarte y convivir con profesionales y creadores de diversas disciplinas.' />
+            <BigTitle title='LA GUERRA DEL TALENTO EN RECESIÓN O PARÁLISIS ECONÓMICA' small style={{fontSize: '13.5px'}} />
+            <Text text='Las condiciones económicas imperantes en estos años de crisis, han representado un cambio significativo en el mundo del trabajo. Esto ha tenido efectos negativos y positivos en la gestión del talento, dependiendo que es lo que se mire...' />
 
           </div>
           <div className='col-md-6 col-xs-12 col-lg-6' style={{textAlign: 'center'}}>
-            <img src='/fotohome2.jpg' />
+            <img src='/reclutamientorrss.jpg' />
             <br />
             <br />
-            <BigTitle title='COMUNIDAD DE TRABAJO INDEPENDIENTE' small style={{fontSize: '13.5px', textAlign: 'center'}} />
-            <Text text='Leñeria es una red social física conformada por arquitectos, diseñadores, fotógrafos, ingenieros, ciclistas, audiovisuales, programadores y emprendedores que trabajan juntos en un ambiente diseñado para fomentar la interacción y el networking.' />
+            <BigTitle title='RECLUTAMIENTO EN REDES SOCIALES' small style={{fontSize: '13.5px', textAlign: 'center'}} />
+            <Text text='Los procesos de reclutamiento por Linkedin y otras redes sociales que realizan tanto empresas como algunos headhunters, tienen una serie de problemas que es necesario tener en cuenta para que el reclutamiento tenga éxito y la empresa pueda seleccionar y contratar al mejor talento disponible...' />
           </div>
         </div>
+        
+        <br />
+        <br />
 
-        <div>
-          <BigTitle title='2 UBICACIONES EN SANTIAGO' />
+
+        <div className='row' style={{textAlign: 'center'}}>
+          <div className='col-md-6 col-xs-12' style={{textAlign: 'center'}}>
+            <img src='/elegircoach.jpg' />
+            <br />
+            <br />
+            <BigTitle title='COMO ELEGIR UN COACH' small style={{fontSize: '13.5px'}} />
+            <Text text='Cuando un ejecutivo decide comenzar a trabajar con un coach nace la pregunta obligatoria, ¿cómo lo elijo? En un mercado saturado de información, productos y servicios, el coaching no se queda atrás. Sobran los coach no certificados y sin la formación adecuada, y son realmente contados con los dedos aquellos que logran realizar un trabajo bueno y de calidad, que perdure en el tiempo...' />
+
+          </div>
+          <div className='col-md-6 col-xs-12 col-lg-6' style={{textAlign: 'center'}}>
+            <img src='/coachingquees.jpg' />
+            <br />
+            <br />
+            <BigTitle title='QUE ES EL COACHING Y PARA QUE SIRVE' small style={{fontSize: '13.5px', textAlign: 'center'}} />
+            <Text text='Suele suceder que hay poca claridad respecto a lo que es el coaching. Muchos lo confunden con el hecho de hacer terapia, actividad que realizan los sicólogos y cuya visión depende de diferentes escuelas. Otros piensan que es lo mismo que el mentoring, situación que se genera dentro de las empresas y que tiene que ver con formar a los trabajadores a través de una persona encargada de transmitir su aprendizaje...' />
+          </div>
         </div>
-        <BigPhoto title='SEMINARIO' subtitle='Seminario 1307 Ñuñoa' photo='/leneria1.jpg' onTouchTap={this.redirectSeminario1307} />
-        <BigPhoto title='ZANELLI' subtitle='Zanelli 1319 Ñuñoa' photo='/leneria2.jpg' onTouchTap={this.redirectZanelli1319} />
-        <BigPhoto title='EX LEÑERIA' subtitle='Proximamente' photo='/leneria3.jpg' onTouchTap='' />
+        <br />
+        <br />
+        <br />
+        <br />      
       {/*  <BigTitle title='Habitantes en Leñeria' small/>
         <div className='row'>
           <Logos logo='/LOGO-PLAN-COMUN-BLANCO.png' text='Plan Común' web='www.plancomun.com' onTouchTap={() =>window.location.href='http://www.plancomun.cl'} />

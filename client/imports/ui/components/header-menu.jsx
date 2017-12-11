@@ -30,6 +30,9 @@ export default class HeaderMenu extends React.Component {
   redirectBlog () {
     this.context.router.push('/blog')
   }
+  redirectExecutiveSearch(){
+    this.context.router.push('/executivesearch')
+  }
 
 
   render () {

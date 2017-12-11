@@ -9,11 +9,13 @@ import Equipo from './equipo'
 import Tienda from './tienda'
 import Blog from './blog'
 import Servicios from './servicios'
-
+import ExecutiveSearch from './executivesearch'
 
 export default (
   <Route path='/' component={PublicPages}>
     <Route path='contacto' component={Contacto} />
+    <Route path='blog' component={Blog} />
+    <Route path='executivesearch' component={ExecutiveSearch} />
     <Route path='contacto2' component={Contacto2} />
     <Route path= 'empresa' component={Empresa} />
     <Route path='equipo' component={Equipo} />

@@ -25,15 +25,18 @@ export default class Home extends React.Component {
   render () {
     return (
       <div>
+   
         <BigTitle title='Equipo' />
-        <BigTitle title='Jose Fernandez Vergara / President & Founder' small/>
+        <BigPhoto title='Jose Fernandez Vergara' subtitle='President & Founder' photo='/jose.jpg' onTouchTap={this.redirectExecutiveSearch} />
         <Text text="Stratos fué fundada en el año 2007 por José Fernández Vergara. Abogado Universidad de Chile; Postítulo IESE Business School, Wharton y China Europe International Business School (CEIBS); M.B.A. Esade, Barcelona España PADE 2012 ESE." />
         <br/>
         <Text text="Certificado como Director Global del Institute of Director London." />
         <br/>
         <Text text="Se desempeñó como Socio en otras empresas de Executive Search, anteriormente ocupó cargos gerenciales en Chile y Europa, ha trabajado en empresas mutinacionales como Unisys y Credit Agricole en España y Chile, y en otras empresa nacionales." />
+        <br/>
+        <br/>
 
-        <BigTitle title='Mª Isabel Fernández Donoso / Partner' small/>
+        <BigPhoto title='Mª Isabel Fernández Donoso' subtitle='Partner' photo='/01.jpg' onTouchTap={this.redirectExecutiveSearch} />
         <Text text="Isabel tiene una experiencia de más de 7 años en la búsqueda de Gerentes Generales, y equipos de alta dirección." />
         <br/>
         <Text text="Tiene una gran experiencia en dirigir programas de liderazgo y desarrollo de equipos de alto desempeño." />

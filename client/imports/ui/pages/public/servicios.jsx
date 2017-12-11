@@ -24,12 +24,12 @@ export default class Home extends React.Component {
     return (
       <div>
       <BigTitle title='Servicios'   />
-      <BigPhoto title='Executive Search' subtitle='' photo='/00.jpg' onTouchTap={this.redirectSeminario1307} />
-      <BigPhoto title='Governance' subtitle='' photo='/01.jpg' onTouchTap={this.redirectSeminario1307} />
-      <BigPhoto title='Liderazgo' subtitle='' photo='/02.jpg' onTouchTap={this.redirectSeminario1307} />
-      <BigPhoto title='Evaluaciones' subtitle='' photo='/03.jpg' onTouchTap={this.redirectSeminario1307} />
-      <BigPhoto title='Everything DISC' subtitle='' photo='/04.jpg' onTouchTap={this.redirectSeminario1307} />
-      <BigPhoto title='Coaching' subtitle='' photo='/05.jpg' onTouchTap={this.redirectSeminario1307} />
+      <BigPhoto title='Executive Search' subtitle='' photo='/00.jpg' onTouchTap={this.redirectExecutiveSearch} />
+      <BigPhoto title='Governance' subtitle='' photo='/01.jpg' onTouchTap={this.redirectExecutiveSearch} />
+      <BigPhoto title='Liderazgo' subtitle='' photo='/02.jpg' onTouchTap={this.redirectExecutiveSearch} />
+      <BigPhoto title='Evaluaciones' subtitle='' photo='/03.jpg' onTouchTap={this.redirectExecutiveSearch} />
+      <BigPhoto title='Everything DISC' subtitle='' photo='/04.jpg' onTouchTap={this.redirectExecutiveSearch} />
+      <BigPhoto title='Coaching' subtitle='' photo='/05.jpg' onTouchTap={this.redirectExecutiveSearch} />
 
 
 
