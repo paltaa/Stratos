@@ -109,9 +109,17 @@ export default class Contact extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
+      nombre: '',
+      apellidos: '',
       email: '',
+      telefono: '',
+      linkedin: '',
+      empresa: '',
+      cargo: '',
       subject: '',
       message: '',
+      area_madre:'',
+      area: '',
       topic: props.motivo,
       open: false,
       loading: false
@@ -177,7 +185,7 @@ export default class Contact extends React.Component {
             <TextField
               floatingLabelText='Apellidos'
               fullWidth
-              id='Apellidos'
+              id='apellidos'
               value={this.state.apellidos}
               onChange={this.onChange}
             /><br/>
@@ -271,7 +279,7 @@ export default class Contact extends React.Component {
               floatingLabelText='Ultima area en la que trabajaste'
               id='area_madre'
               value={this.state.area_madre}
-              onChange={(event, index, value) => this.setState({area: value})}
+              onChange={(event, index, value) => this.setState({area_madre: value})}
               fullWidth
             >
               <MenuItem value={'consultoria'} primaryText='Consultoria' />
