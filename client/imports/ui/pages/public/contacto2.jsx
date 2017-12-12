@@ -14,12 +14,95 @@ import Checkbox from 'material-ui/Checkbox'
 //Checkbox styles here
 const styles = {
   block: {
-    maxWidth: 400,
+    maxWidth: 500,
   },
   checkbox: {
-    marginBottom: 10,
+    marginBottom: 20,
   },
 };
+//elementos del objeto industrias en checkboxes
+
+
+/*
+const itemsIndustrias = [
+"Agricultura y Forestal",
+"Agua, Gas, Energia",
+"Organizaciones sin fines de lucro",
+"Construcción",
+"Consumo masivo: Alimentación",
+"Automotriz",
+"Consumo masivo: Bebidas",
+"Consumo masivo: Cuidado Personal",
+"Consumer Electronic",
+"Vestuario y Moda",
+"Educación Otros",
+"Capacitación",
+"Gobierno Central",
+"Gobierno Municipal",
+"Canal Horeca",
+"Lineas Areas",
+"Transporte y Logistica",
+"Turismo",
+"Inmobiliaria",
+"Laboratorios",
+"Medios",
+"Minería",
+"Industria",
+"Retail",
+"Salud",
+"Legal",
+"Servicios Contables",
+"Consultoría Recursos Humanos",
+"Consultoría de Negocios",
+"Ingeniería",
+"AFP e Isapres",
+"Bancos",
+"Bolsa de Valores",
+"Seguros",
+"Tecnología",
+"Telecomunicaciones"
+]
+
+class Application extends React.Component {
+  componentWillMount = () => {
+    this.selectedCheckboxes = new Set();
+  }
+
+  toggleCheckbox = label => {
+    if (this.selectedCheckboxes.has(label)) {
+      this.selectedCheckboxes.delete(label);
+    } else {
+      this.selectedCheckboxes.add(label);
+    }
+  }
+
+  handleFormSubmit = formSubmitEvent => {
+    formSubmitEvent.preventDefault();
+
+    for (const checkbox of this.selectedCheckboxes) {
+      console.log(checkbox, 'is selected.');
+    }
+  }
+
+  createCheckbox = label => (
+    <Checkbox
+            label={label}
+            handleCheckboxChange={this.toggleCheckbox}
+            key={label}
+        />
+  )
+
+  createCheckboxes = () => (
+    items.map(this.createCheckbox)
+  )
+
+
+}
+
+{this.createCheckboxes()}
+*/
+//FIN objeto CHECKBOX INDUSTRIAS
+
 
 
 export default class Contact extends React.Component {
@@ -50,7 +133,7 @@ export default class Contact extends React.Component {
       if (error) {
         console.warn('error')
       }
-      this.setState({email: '', subject: '', message: '', topic: '', open: true, loading: false})
+      this.setState({nombre: '', apellidos: '', email: '', telefono: '', linkedin: '', empresa: '',cargo: '', area: '' ,area_madre: '', open: true, loading: false})
     })
   }
 
@@ -142,6 +225,8 @@ export default class Contact extends React.Component {
 
              <div style={{columnCount: '3'}}>
              <div style={styles.block}>
+                      
+
               <Checkbox label="Agricultura y Forestal"  style={styles.checkbox}/>
               <Checkbox label="Agua, Gas, Energia"  style={styles.checkbox}/>
               <Checkbox label="Organizaciones sin fines de lucro"  style={styles.checkbox}/>
