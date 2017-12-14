@@ -12,6 +12,7 @@ import BigTitle from '../../components/big-title'
 import Text from '../../components/text'
 import Checkbox from 'material-ui/Checkbox'
 //Checkbox styles here
+
 const styles = {
   block: {
     maxWidth: 500,
@@ -22,8 +23,6 @@ const styles = {
 };
 //elementos del objeto industrias en checkboxes
 
-
-/*
 const itemsIndustrias = [
 "Agricultura y Forestal",
 "Agua, Gas, Energia",
@@ -63,9 +62,22 @@ const itemsIndustrias = [
 "Telecomunicaciones"
 ]
 
-class Application extends React.Component {
+//REVISAR ESTA MIERDA DE CLASE
+
+/*
+export class Checks extends React.Component {
+ constructor (props) {
+    super(props);
+
+
+this.createCheckbox = this.createCheckbox().bind(this);
+
+}
   componentWillMount = () => {
     this.selectedCheckboxes = new Set();
+  }
+  state = {
+    isChecked: false,
   }
 
   toggleCheckbox = label => {
@@ -75,7 +87,6 @@ class Application extends React.Component {
       this.selectedCheckboxes.add(label);
     }
   }
-
   handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
 
@@ -83,26 +94,34 @@ class Application extends React.Component {
       console.log(checkbox, 'is selected.');
     }
   }
-
+  
   createCheckbox = label => (
     <Checkbox
-            label={label}
+            label={ label }
             handleCheckboxChange={this.toggleCheckbox}
-            key={label}
+            key={ label }
         />
   )
-
+  
   createCheckboxes = () => (
-    items.map(this.createCheckbox)
+    itemsIndustrias.map(this.createCheckbox)
   )
-
-
+//this.createCheckbox() = this.createCheckbox().bind(this);
 }
 
-{this.createCheckboxes()}
-*/
+Checks.propTypes = {
+  boxes: React.PropTypes.array
+}
 //FIN objeto CHECKBOX INDUSTRIAS
 
+
+*/
+class AreaForm extends React.Component{
+
+
+
+  
+}
 
 
 export default class Contact extends React.Component {
@@ -229,12 +248,14 @@ export default class Contact extends React.Component {
               id='cargo'
               value={this.state.cargo}
               onChange={this.onChange}
-            /><br />
+            />
+            <br />
+            <Text text="Industrias en las que has trabajado" style={{textAlign: 'left', padding: '0px 0px' }}  />
+            <br />
 
              <div style={{columnCount: '3'}}>
              <div style={styles.block}>
-                      
-
+             
               <Checkbox label="Agricultura y Forestal"  style={styles.checkbox}/>
               <Checkbox label="Agua, Gas, Energia"  style={styles.checkbox}/>
               <Checkbox label="Organizaciones sin fines de lucro"  style={styles.checkbox}/>
