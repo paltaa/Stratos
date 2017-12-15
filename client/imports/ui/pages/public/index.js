@@ -10,6 +10,11 @@ import Tienda from './tienda'
 import Blog from './blog'
 import Servicios from './servicios'
 import ExecutiveSearch from './executivesearch'
+import Liderazgo from './liderazgo'
+import Evaluaciones from './evaluaciones'
+import EverythingDISC from './everythingDISC'
+import Coaching from './coaching'
+
 
 export default (
   <Route path='/' component={PublicPages}>
@@ -22,7 +27,14 @@ export default (
     <Route path='servicios' component={Servicios} />
     <Route path='tienda' component={Tienda} />
     <Route path='equipo' component={Equipo} />
+   <Route path='governance' component={Governance}/>
+   <Route path='liderazgo' component={Liderazgo}/>
+   <Route path='evaluaciones' component={Evaluaciones}/>
+   <Route path='everythingDISC' component={EverythingDISC}/>
+   <Route path='coaching' component={Coaching}/>
+
 
     <IndexRoute component={Home} />
   </Route>
 )
+
