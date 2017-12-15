@@ -12,7 +12,6 @@ import BigTitle from '../../components/big-title'
 import Text from '../../components/text'
 import Checkbox from 'material-ui/Checkbox'
 //Checkbox styles here
-
 const styles = {
   block: {
     maxWidth: 500,
@@ -21,6 +20,8 @@ const styles = {
     marginBottom: 20,
   },
 };
+
+
 //elementos del objeto industrias en checkboxes
 
 const itemsIndustrias = [
@@ -63,8 +64,8 @@ const itemsIndustrias = [
 ]
 
 //REVISAR ESTA MIERDA DE CLASE
-
 /*
+
 export class Checks extends React.Component {
  constructor (props) {
     super(props);
@@ -102,28 +103,45 @@ this.createCheckbox = this.createCheckbox().bind(this);
             key={ label }
         />
   )
-  
-  createCheckboxes = () => (
+
+  createCheckboxes = () => {
     itemsIndustrias.map(this.createCheckbox)
-  )
-//this.createCheckbox() = this.createCheckbox().bind(this);
+  }
+  
+  //this.createCheckboxes() = this.createCheckboxes().bind(this);
 }
 
 Checks.propTypes = {
   boxes: React.PropTypes.array
 }
+
+*/
 //FIN objeto CHECKBOX INDUSTRIAS
 
 
-*/
-class AreaForm extends React.Component{
+/*
+export class AreaForm extends React.Component {
+  constructor(props){
+    super(props);
+    this.DisplayChecks= this.DisplayChecks.bind(this);
+  }
 
 
+ DisplayChecks(area_madre){
+  if(area_madre === 'consultoria'){
+    return(
+<Checkbox label="Auditor"  style={styles.checkbox}/>
 
-  
+/*"Consultor TI"
+"Contadores"
+"Impuestos"
+"Management"
+"Recursos Humanos"
+      );
+    }
+  }
 }
-
-
+*/
 export default class Contact extends React.Component {
   constructor (props) {
     super(props)
@@ -137,14 +155,12 @@ export default class Contact extends React.Component {
       cargo: '',
       subject: '',
       message: '',
-      area_madre:'',
+      area_madre: 'consultoria',
       area: '',
-      topic: props.motivo,
       open: false,
       loading: false
     }
   }
-
   // Snackbar Handlers
   @autobind
   handleRequestClose () {
@@ -163,8 +179,7 @@ export default class Contact extends React.Component {
       this.setState({nombre: '', apellidos: '', email: '', telefono: '', linkedin: '', empresa: '',cargo: '', area: '' ,area_madre: '', open: true, loading: false})
     })
   }
-
-  @autobind
+ @autobind
   onChange (event) {
     var target = event.target
     var state = {}
@@ -256,6 +271,7 @@ export default class Contact extends React.Component {
              <div style={{columnCount: '3'}}>
              <div style={styles.block}>
              
+             
               <Checkbox label="Agricultura y Forestal"  style={styles.checkbox}/>
               <Checkbox label="Agua, Gas, Energia"  style={styles.checkbox}/>
               <Checkbox label="Organizaciones sin fines de lucro"  style={styles.checkbox}/>
@@ -296,7 +312,7 @@ export default class Contact extends React.Component {
               </div>
 
           </div>
-                      <SelectField
+            <SelectField
               floatingLabelText='Ultima area en la que trabajaste'
               id='area_madre'
               value={this.state.area_madre}
@@ -309,21 +325,26 @@ export default class Contact extends React.Component {
               <MenuItem value={'legal'} primaryText='Legal' />
               <MenuItem value={'salud'} primaryText='Salud' />
               <MenuItem value={'operaciones'} primaryText='Operaciones' />
-              <MenuItem value={'recursos_humanos'} primaryText='Recursos Humanos' />
-              <MenuItem value={'comercial_marketing'} primaryText='Comercial y marketing' />
+              <MenuItem value={'recursos humanos'} primaryText='Recursos Humanos' />
+              <MenuItem value={'comercial marketing'} primaryText='Comercial y marketing' />
               <MenuItem value={'otros'} primaryText='Otros' />
               <MenuItem value={'tecnologia'} primaryText='Tecnologia' />
-              <MenuItem value={'gobierno_corporativo'} primaryText='Gobierno Corporativo' />
+              <MenuItem value={'gobierno corporativo'} primaryText='Gobierno Corporativo' />
             </SelectField>
-          {/* if(area_madre==='consultoria'){
 
-<Checkbox label="I"Auditor"style={styles.checkbox}/>
-<Checkbox label="I"Consultor TI"style={styles.checkbox}/>
-<Checkbox label="I"Contadores"style={styles.checkbox}/>
-<Checkbox label="I"Impuestos"style={styles.checkbox}/>
-<Checkbox label="I"Management"style={styles.checkbox}/>
-<Checkbox label="I"Recursos Humanos"style={styles.checkbox}/>
-*/}
+                   <SelectField
+              floatingLabelText='Ultima area en la que trabajaste de'
+              id='area'
+              value={this.state.area}
+              onChange={(event, index, value) => this.setState({area: value})}
+              fullWidth
+            >
+
+            {DesplegarAreas(this.state.area_madre)}
+
+                        </SelectField>
+
+
             <RaisedButton label='Enviar' primary style={{marginTop: '30px', float: 'right'}} onTouchTap={this.onSubmit} />
             {this.renderLoading()}
         </div>
@@ -337,4 +358,113 @@ export default class Contact extends React.Component {
       </div>
     )
   }
+}
+
+
+
+
+
+
+function DesplegarAreas(oki){
+  if(oki === 'consultoria'){
+    return (
+      <div>
+
+              <MenuItem value={'auditor'} primaryText='Auditor' />
+              <MenuItem value={'consultor ti'} primaryText='Consultor Ti' />
+              <MenuItem value={'contador'} primaryText='Contador' />
+              <MenuItem value={'impuestos'} primaryText='Impuestos' />
+              <MenuItem value={'management'} primaryText='Management' />
+              <MenuItem value={'recursos humanos'} primaryText='Recursos Humanos' />
+            </div>
+      );
+  }else if(oki === 'finanzas'){
+    return(
+           <div>
+              <MenuItem value={'analista'} primaryText='Analista' />
+            <MenuItem value={'auditoria'} primaryText='Auditoria' />
+            <MenuItem value={'contabilidad'} primaryText='Contabilidad' />
+            <MenuItem value={'controller'} primaryText='Controller' />
+            <MenuItem value={'planificacion'} primaryText='Planificacion' />
+            <MenuItem value={'riesgo'} primaryText='Riesgo' />
+            <MenuItem value={'subegerencia finanzas'} primaryText='Subgerencia Finanzas' />
+            <MenuItem value={'tesoreria'} primaryText='Tesoreria' />
+            <MenuItem value={'investor relations'} primaryText='Investor Relations' />
+            <MenuItem value={'control de gestion'} primaryText='Control de Gestion' />
+            </div>
+
+     );
+  }else if(oki === 'gerencias'){
+        return(
+           <div>
+            <MenuItem value={'gerente comercial'} primaryText='Gerente Comercial' />
+            <MenuItem value={'gerente general'} primaryText='Gerente General' />
+            <MenuItem value={'gerente administracion y finanzas'} primaryText='Gerente Administracion y Finanzas' />
+            <MenuItem value={'gerente recursos humanos'} primaryText='Gerente Recursos Humanos' />
+            <MenuItem value={'gerente tecnologia'} primaryText='Gerente Tecnologia' />
+            <MenuItem value={'gerente marketing'} primaryText='Gerente Marketing' />
+            <MenuItem value={'gerente operaciones'} primaryText='Gerente Operaciones' />
+            </div>
+
+     );
+
+
+  }else if(oki === 'legal'){
+        return(
+           <div>
+
+            <MenuItem value={'abogado'} primaryText='Abogado' />
+            <MenuItem value={'asociado'} primaryText='Asociado' />
+            <MenuItem value={'compilance'} primaryText='Compilance' />
+            <MenuItem value={'fiscal'} primaryText='Fiscal' />
+            <MenuItem value={'socio'} primaryText='Socio' />
+
+
+            </div>
+
+     );
+  }else if(oki === 'salud'){
+        return(
+           <div>
+            <MenuItem value={'direccion medica'} primaryText='Direccion Medica' />
+            <MenuItem value={'pharma'} primaryText='Pharma' />
+            </div>
+
+     );
+}else if(oki === 'otros'){
+        return(
+           <div>
+
+<MenuItem value={'otros'} primaryText='otros' />
+            </div>
+
+     );
+}else if(oki === 'tecnologia'){
+        return(
+           <div>
+
+            <MenuItem value={'seguridad informatica'} primaryText='Seguridad Informatica' />
+            <MenuItem value={'desarrollo'} primaryText='Desarrollo' />
+            <MenuItem value={'digital'} primaryText='Digital' />
+            <MenuItem value={'mobile'} primaryText='Mobile' />
+            <MenuItem value={'proyectos ti'} primaryText='Proyectos Ti' />
+            <MenuItem value={'sap y erp'} primaryText='SAP y ERP' />
+            <MenuItem value={'soporte ti'} primaryText='Soporte TI' />
+            </div>
+
+     );
+
+
+
+
+}else if(oki === 'gobierno corporativo'){
+        return(
+           <div>
+            <MenuItem value={'socio'} primaryText='Socio' />
+            <MenuItem value={'presidente ejecutivo'} primaryText='Presidente Ejecutivo' />
+            <MenuItem value={'miembro del directorio'} primaryText='Miembro del Directorio' />
+            </div>
+     );
+
+}
 }
